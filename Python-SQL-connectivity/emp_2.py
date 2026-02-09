@@ -5,7 +5,7 @@ import numpy as np
 conn= mysql.connector.connect(
     host="localhost",
     user="root",
-    password="7984455774sak",
+    password="",
     database="employee"
 )
 cursor=conn.cursor()
@@ -44,4 +44,5 @@ for row in rows:
 # step_11: Close MYsql connection
 cursor.close()
 conn.close()
+
 print("All tasks completed")

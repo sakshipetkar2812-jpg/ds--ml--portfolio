@@ -5,7 +5,7 @@ import numpy as np
 conn= mysql.connector.connect(
     host="localhost",
     user="root",
-    password="7984455774sak"
+    password=""
 )
 cursor =conn.cursor()
 # step-6: fetch employee details
@@ -23,4 +23,5 @@ print("\nemplyopee details:\n",df)
 # step_8: Close MYsql connection
 cursor.close()
 conn.close()
+
 print("All tasks completed")
